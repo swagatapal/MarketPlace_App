@@ -23,10 +23,10 @@ export default function Header() {
                 </View>
             </View>
 
-            <View className="P-3 px-5 flex flex-row items-center bg-white rounded-full mt-5 border-[2px] border-blue-500">
-                <Feather name="search" size={24} color="blue" />
+            <View className="P-3 px-5 flex flex-row items-center bg-blue-50 rounded-full mt-5 border-[1px] border-blue-200">
+                <Feather name="search" size={24} color="gray" />
                 <TextInput 
-                className="p-3 text-[20px]" 
+                className="p-2.5 text-[20px]" 
                 placeholder='Search'
                 onChangeText={(value)=>{console.log(value)}}/>
             </View>

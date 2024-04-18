@@ -23,14 +23,15 @@ export default function Slider() {
 
     }
   return (
-    <View>
+    <View className="mt-5">
       <FlatList
       data={sliderList}
       horizontal={true}
+      showsHorizontalScrollIndicator={false}
       renderItem={({item, index})=>(
         <View>
             {/* <Text>{index}</Text> */}
-        <Image source={{uri: item?.image}} className="h-[200px] w-[330px]"/>
+        <Image source={{uri: item?.image}} className="h-[170px] w-[300px] mr-3 rounded-lg object-contain"/>
         </View>
       )}/>
     </View>
