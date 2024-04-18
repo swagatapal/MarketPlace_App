@@ -1,5 +1,4 @@
 import { View, Text, TextInput, StyleSheet, Button, TouchableOpacity, Image, ToastAndroid, Alert, ActivityIndicator } from 'react-native'
-import { app } from '../../firebase_config';
 import { getFirestore, getDocs,collection, addDoc  } from "firebase/firestore";
 import React, { useState, useEffect } from 'react';
 import { Formik } from 'formik';
@@ -7,6 +6,7 @@ import {Picker} from '@react-native-picker/picker'
 import * as ImagePicker from 'expo-image-picker';
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 import { useUser } from '@clerk/clerk-expo';
+import { app } from '../../firebase_config';
 
 
 
