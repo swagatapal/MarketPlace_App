@@ -8,6 +8,7 @@ import AddPostScreen from '../Screens/AddPostScreen';
 import { FontAwesome } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
+import HomeScreenStackNav from './HomeScreenStackNav';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,7 +16,7 @@ const Tab = createBottomTabNavigator();
 export default function TabNavigation() {
   return (
         <Tab.Navigator screenOptions={{headerShown:false}}>
-            <Tab.Screen name='home' component={HomeScreen}
+            <Tab.Screen name='home-tab' component={HomeScreenStackNav}
             options={{
                 tabBarLabel:({color})=>(
                 <Text style={{color:color, fontSize:12, marginTop:-7,marginBottom:3, fontWeight:'bold'}}>Home</Text>
