@@ -9,6 +9,8 @@ import { FontAwesome } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import HomeScreenStackNav from './HomeScreenStackNav';
+import ExploreScreenStackNav from './ExploreScreenStackNav';
+import ProfileScreenStackNav from './profileScreenStackNav';
 
 const Tab = createBottomTabNavigator();
 
@@ -25,7 +27,7 @@ export default function TabNavigation() {
                 <FontAwesome name="home" size={size} color={color} />
             )
             }}/>
-            <Tab.Screen name = 'explore' component={ExploreScreen}
+            <Tab.Screen name = 'explore' component={ExploreScreenStackNav}
             options={{
                 tabBarLabel:({color})=>(
                 <Text style={{color:color, fontSize:12, marginTop:-7,marginBottom:3, fontWeight:'bold'}}>Explore</Text>
@@ -43,7 +45,7 @@ export default function TabNavigation() {
                 <FontAwesome name="camera" size={size} color={color} />
             )
             }}/>
-            <Tab.Screen name='profile' component={ProfileScreen}
+            <Tab.Screen name='profile' component={ProfileScreenStackNav}
             options={{
                 tabBarLabel:({color})=>(
                 <Text style={{color:color, fontSize:12, marginTop:-7,marginBottom:3, fontWeight:'bold'}}>Profile</Text>

@@ -14,7 +14,7 @@ export default function PostItem({item}) {
        })} className='flex-1 m-1  rounded-lg border-[1px] border-slate-300'>
           <Image source={{uri:item?.image}} className="w-full h-[140px] rounded-lg "/>
           <View>
-            <View style={{display:'flex', flexDirection:'row', justifyContent:'space-between', paddingTop:3}}>
+            <View style={{display:'flex', flexDirection:'row', justifyContent:'space-between', paddingTop:3, paddingRight:10}}>
               <Text className="text-[15px] font-bold  pl-2">{item?.title}</Text>
               <MaterialIcons name="favorite" size={24} color="blue" />
 
